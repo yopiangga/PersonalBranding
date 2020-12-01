@@ -7,22 +7,23 @@
 
     <link rel="stylesheet" href="/css/css-reset.css">
     <link rel="stylesheet" href="/scss/style.css">
+    <link rel="stylesheet" href="/js/aos/aos.css">
 </head>
 <body class="landing-page">
 
     <nav>
         <div class="content">
             <div class="logo">
-                <img src="" alt="">
+                <img src="/img/logo.png" alt="">
             </div>
             <div class="menu">
                 <ul>
-                    <a href="#home" class="active"><li>HOME</li></a>
-                    <a href="#about"><li>ABOUT</li></a>
-                    <a href="#service"><li>SERVICE</li></a>
-                    <a href="#portfolio"><li>PORTFOLIO</li></a>
-                    <a href="#testimonial"><li>TESTIMONIAL</li></a>
-                    <a href="#contact"><li>CONTACT</li></a>
+                    <a href="#home" class="nav-home"><li>HOME</li></a>
+                    <a href="#about" class="nav-about"><li>ABOUT</li></a>
+                    <a href="#service" class="nav-service"><li>SERVICE</li></a>
+                    <a href="#portfolio" class="nav-portfolio"><li>PORTFOLIO</li></a>
+                    <a href="#testimonial" class="nav-testimonial"><li>TESTIMONIAL</li></a>
+                    <a href="#contact" class="nav-contact"><li>CONTACT</li></a>
                 </ul>
             </div>
         </div>
@@ -33,18 +34,30 @@
             <div class="content-top">
                 <div class="top-left">
                     <div class="inner">
-                        <h5>Hello, i'am</h5>
+                        <h5 data-aos="flip-up">Hello, i'am</h5>
                         <h1>Alfian Prisma Yopiangga</h1>
-                        <h4>Front End Developer</h4>
+                        <h4 data-aos="fade-right">Front End Developer & UI/UX Designer</h4>
                         <div class="action">
-                            <button class="hire-me">HIRE ME</button>
-                            <button class="download">DOWNLOAD CV</button>
+                            <button class="hire-me" onclick="window.location.href=''">HIRE ME</button>
+                            <button class="download" onclick="window.location.href='/file/Alfian_Prisma_Yopiangga-CV.pdf'">DOWNLOAD CV</button>
                         </div>
                         <div class="sosial-media">
-                            <div class="circle"><i data-feather="facebook" width="16px"></i></div>
-                            <div class="circle"><i data-feather="instagram" width="16px"></i></div>
-                            <div class="circle"><i data-feather="twitter" width="16px"></i></div>
-                            <div class="circle"><i data-feather="linkedin" width="16px"></i></div>
+                            <div class="circle" onclick="window.location.href='https://www.facebook.com/alfian.prisma.yopiangga'">
+                                <i class="icon-dark" data-feather="facebook" width="16px"></i>
+                                <i class="icon-white" data-feather="facebook" width="16px" style="color: white;"></i>
+                            </div>
+                            <div class="circle" onclick="window.location.href='https://www.instagram.com/alfian_prisma_yopiangga/'">
+                                <i class="icon-dark" data-feather="instagram" width="16px"></i>
+                                <i class="icon-white" data-feather="instagram" width="16px" style="color: white;"></i>
+                            </div>
+                            <div class="circle" onclick="window.location.href='https://twitter.com/AlfianPrisma'">
+                                <i class="icon-dark" data-feather="twitter" width="16px"></i>
+                                <i class="icon-white" data-feather="twitter" width="16px" style="color: white;"></i>
+                            </div>
+                            <div class="circle" onclick="window.location.href='https://www.linkedin.com/in/alfian-prisma-yopiangga-a954251a8/'">
+                                <i class="icon-dark" data-feather="linkedin" width="16px"></i>
+                                <i class="icon-white" data-feather="linkedin" width="16px" style="color: white;"></i>
+                            </div>
                         </div>
                     </div>  
                 </div>
@@ -55,17 +68,17 @@
             <div class="content-bottom">
                 <div class="card">
                     <div class="card-left">
-                        <h2>234</h2>
+                        <h2>15</h2>
                         <h6>Happy Clients</h6>
                     </div>
                     <div class="line"></div>
                     <div class="card-center">
-                        <h2>125</h2>
+                        <h2>15</h2>
                         <h6>Project Completed</h6>
                     </div>
                     <div class="line"></div>
                     <div class="card-right">
-                        <h2>54</h2>
+                        <h2>6</h2>
                         <h6>Awarding</h6>
                     </div>
                 </div>
@@ -77,21 +90,21 @@
         <div class="content">
             <div class="content-head">
                 <h5>Who am i</h5>
-                <h3>About Me</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, eligendi. Ex, pariatur error. Placeat, eligendi. Ex, pariatur error.</p>
+                <h3 data-aos="fade-up">About Me</h3>
+                <p>My brief personal data and various things that can describe me so that you know him</p>
             </div>
             <div class="content-body">
                 <div class="body-left">
                     <div class="frame">
-                        <img src="/img/me-3.png" alt="">
+                        <img src="/img/me-3.png" alt="" data-aos="fade-right">
                     </div>
                 </div>
                 <div class="body-right">
                     <h3>Alfian Prisma Yopiangga</h3>
                     <h4>Front End Developer</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit, enim unde culpa aut quam facere, delectus nam illum aliquid corrupti perferendis magnam voluptates optio? Sapiente cum corrupti similique repellat?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit, enim unde culpa aut quam facere, delectus nam illum aliquid corrupti perferendis magnam voluptates optio? Sapiente cum corrupti similique repellat?</p>
-                    <button class="download">DOWNLOAD CV</button>
+                    <p>I'm Alfian Prisma Yopiangga, Front End Web Developer and UI / UX Designer. I have several years of experience as a freelancer Front End Developer and UI / UX Designer on several major digital platforms. I have also participated in the Campuspedia Internship program as a Web Developer.</p>
+                    <p>I like communicating with my clients regarding their website development, so it is undeniable that I have good communication skills with clients of different languages ​​than mine. I like things that are analytical in nature and require structured techniques to solve.</p>
+                    <button data-aos="fade-up" class="download" onclick="window.location.href='/file/Alfian_Prisma_Yopiangga-CV.pdf'">DOWNLOAD CV</button>
                 </div>
             </div>
         </div>
@@ -101,24 +114,24 @@
         <div class="content">
             <div class="content-head">
                 <h5>Service</h5>
-                <h3>What I Do</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, eligendi. Ex, pariatur error. Placeat, eligendi. Ex, pariatur error.</p>
+                <h3 data-aos="fade-up">What I Do</h3>
+                <p>What can I give and do to help solve your problem quickly and easily</p>
             </div>
             <div class="content-body">
-                <div class="card">
-                    <div class="image"></div>
+                <div class="card" data-aos="fade-right">
+                    <i data-feather="pen-tool" style="margin-bottom: 10px;"></i>
                     <h4>UI/UX</h4>
                 </div>
-                <div class="card">
-                    <div class="image"></div>
+                <div class="card" data-aos="fade-right">
+                    <i data-feather="monitor" style="margin-bottom: 10px;"></i>
                     <h4>Web Design</h4>
                 </div>
-                <div class="card">
-                    <div class="image"></div>
+                <div class="card" data-aos="fade-left">
+                    <i data-feather="smartphone" style="margin-bottom: 10px;"></i>
                     <h4>App Design</h4>
                 </div>
-                <div class="card">
-                    <div class="image"></div>
+                <div class="card" data-aos="fade-left">
+                    <i data-feather="trending-up" style="margin-bottom: 10px;"></i>
                     <h4>SEO</h4>
                 </div>
             </div>
@@ -129,14 +142,14 @@
         <div class="content">
             <div class="content-head">
                 <h5>Skill</h5>
-                <h3>Why Choose Me</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, eligendi. Ex, pariatur error. Placeat, eligendi. Ex, pariatur error.</p>
+                <h3 data-aos="fade-up">Why Choose Me</h3>
+                <p>I have various competent skills in their fields to help solve your problems</p>
             </div>
             <div class="content-body">
                 <div class="task">
                     <div class="taskbar">
                         <div class="bar">
-                            <div class="percent" style="width: 75%;"></div>
+                            <div class="percent" style="width: 75%;" data-aos="fade-right"></div>
                         </div>
                         <div class="text">
                             <h5>UI/UX</h5>
@@ -145,7 +158,7 @@
                     </div>
                     <div class="taskbar">
                         <div class="bar">
-                            <div class="percent" style="width: 90%;"></div>
+                            <div class="percent" style="width: 90%;" data-aos="fade-right"></div>
                         </div>
                         <div class="text">
                             <h5>Web Design</h5>
@@ -156,7 +169,7 @@
                 <div class="task">
                     <div class="taskbar">
                         <div class="bar">
-                            <div class="percent" style="width: 90%;"></div>
+                            <div class="percent" style="width: 90%;" data-aos="fade-right"></div>
                         </div>
                         <div class="text">
                             <h5>App Design</h5>
@@ -165,7 +178,7 @@
                     </div>
                     <div class="taskbar">
                         <div class="bar">
-                            <div class="percent" style="width: 70%;"></div>
+                            <div class="percent" style="width: 70%;" data-aos="fade-right"></div>
                         </div>
                         <div class="text">
                             <h5>SEO</h5>
@@ -181,20 +194,20 @@
         <div class="content">
             <div class="content-head">
                 <h5>Portfolio</h5>
-                <h3>My Wonderful Work</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, eligendi. Ex, pariatur error. Placeat, eligendi. Ex, pariatur error.</p>
+                <h3 data-aos="fade-up">My Wonderful Work</h3>
+                <p>Various projects that I have done from various kinds of requests from my clients, both from within and outside the country</p>
             </div>
             <div class="content-body">
                 <div class="navigation">
                     <ul>
-                        <li class="active">ALL</li>
-                        <li>WEBDESIGN</li>
-                        <li>APPDESIGN</li>
-                        <li>UI/UX</li>
+                        <li class="nav-all active">ALL</li>
+                        <li class="nav-webdesign">WEBDESIGN</li>
+                        <li class="nav-appdesign">APPDESIGN</li>
+                        <li class="nav-uiux">UI/UX</li>
                     </ul>
                 </div>
                 <div class="body-portfolio">
-                    <div class="desain">
+                    <div class="desain web-design" data-aos="flip-up">
                         <div class="desain-img">
                             <img src="/img/portfolio-1.png" alt="">
                             <div class="menu">
@@ -207,7 +220,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="desain">
+                    <div class="desain web-design" data-aos="flip-up">
                         <div class="desain-img">
                             <img src="/img/portfolio-1.png" alt="">
                             <div class="menu">
@@ -220,7 +233,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="desain">
+                    <div class="desain app-design" data-aos="flip-up">
                         <div class="desain-img">
                             <img src="/img/portfolio-1.png" alt="">
                             <div class="menu">
@@ -233,7 +246,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="desain">
+                    <div class="desain app-design" data-aos="flip-up">
                         <div class="desain-img">
                             <img src="/img/portfolio-1.png" alt="">
                             <div class="menu">
@@ -246,7 +259,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="desain">
+                    <div class="desain uiux" data-aos="flip-up">
                         <div class="desain-img">
                             <img src="/img/portfolio-1.png" alt="">
                             <div class="menu">
@@ -268,8 +281,8 @@
         <div class="content">
             <div class="content-head">
                 <h5>Testimonials</h5>
-                <h3>What People Says</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, eligendi. Ex, pariatur error. Placeat, eligendi. Ex, pariatur error.</p>
+                <h3 data-aos="fade-up">What People Says</h3>
+                <p>What did my clients say about the project they gave me and the results they got</p>
             </div>
             <div class="content-body">
                 <div class="slide">
@@ -278,13 +291,29 @@
                     </div>
                     <div class="slide-center">
                         <div class="card-box">
-                            <div class="card">
+                            <div class="card testimonial-1 unActive" data-aos="fade-left">
                                 <div class="image">
                                     <img src="/img/me-circle-1.png" alt="">
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga repellendus amet distinctio in vero officia, error quos voluptatem culpa. Natus rerum illo excepturi fuga quis consectetur odio, voluptates adipisci accusamus.</p>
-                                <h4>Alfian Prisma Yopiangga</h4>
-                                <h5>Director Petikdua</h5>
+                                <p>Alfian Prisma Yopiangga1 is a competent developer in web development, last week I gave a project to build a website related to my property business. He's doing really well and fast, he also keeps his way of communicating with me really well.</p>
+                                <h4>Jhon D. Locke</h4>
+                                <h5>Director Pick Furniture</h5>
+                            </div>
+                            <div class="card testimonial-2" data-aos="fade-left">
+                                <div class="image">
+                                    <img src="/img/me-circle-1.png" alt="">
+                                </div>
+                                <p>Alfian Prisma Yopiangga2 is a competent developer in web development, last week I gave a project to build a website related to my property business. He's doing really well and fast, he also keeps his way of communicating with me really well.</p>
+                                <h4>Jhon D. Locke</h4>
+                                <h5>Director Pick Furniture</h5>
+                            </div>
+                            <div class="card testimonial-3 unActive" data-aos="fade-left">
+                                <div class="image">
+                                    <img src="/img/me-circle-1.png" alt="">
+                                </div>
+                                <p>Alfian Prisma Yopiangga3 is a competent developer in web development, last week I gave a project to build a website related to my property business. He's doing really well and fast, he also keeps his way of communicating with me really well.</p>
+                                <h4>Jhon D. Locke</h4>
+                                <h5>Director Pick Furniture</h5>
                             </div>
                         </div>
                     </div>
@@ -294,9 +323,9 @@
                 </div>
 
                 <div class="navigation">
-                    <div class="circle"></div>
-                    <div class="circle active"></div>
-                    <div class="circle"></div>
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2 active"></div>
+                    <div class="circle circle-3"></div>
                 </div>
             </div>
         </div>
@@ -306,7 +335,7 @@
         <div class="content">
             <div class="content-left">
                 <h3>Hire me for your Awesome Project</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Trust your project to me and I will finish it well and quickly.</p>
             </div>
             <div class="content-right">
                 <button>HIRE ME</button>
@@ -318,8 +347,8 @@
         <div class="content">
             <div class="content-head">
                 <h5>Contact</h5>
-                <h3>Get in Touch</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, eligendi. Ex, pariatur error. Placeat, eligendi. Ex, pariatur error.</p>
+                <h3 data-aos="fade-up">Get in Touch</h3>
+                <p>If you need more information about me and want to discuss your project, you can contact me by emailing me or contacting me using social media.</p>
             </div>
             <div class="content-body">
                 <div class="card">
@@ -329,7 +358,7 @@
                             <input type="text" placeholder="Name">
                             <input type="text" placeholder="Email">
                             <textarea name="message" cols="30" rows="7" placeholder="Message"></textarea>
-                            <button class="send">SEND MESSAGE</button>
+                            <button class="send" data-aos="fade-up">SEND MESSAGE</button>
                         </form>
                     </div>
                     <div class="line"></div>
@@ -337,7 +366,8 @@
                         <div class="information">
                             <div class="img-info">
                                 <div class="circle">
-                                    <i data-feather="navigation" style="width: 16px; color: #ff7a57;"></i>
+                                    <i class="icon-orange" data-feather="navigation" style="width: 16px; color: #ff7a57;"></i>
+                                    <i class="icon-white" data-feather="navigation" style="width: 16px; color: white;"></i>
                                 </div>
                             </div>
                             <div class="text-info">
@@ -348,7 +378,8 @@
                         <div class="information">
                             <div class="img-info">
                                 <div class="circle">
-                                    <i data-feather="phone" style="width: 16px; color: #ff7a57;"></i>
+                                    <i class="icon-orange"  data-feather="phone" style="width: 16px; color: #ff7a57;"></i>
+                                    <i class="icon-white" data-feather="phone" style="width: 16px; color: white;"></i>
                                 </div>
                             </div>
                             <div class="text-info">
@@ -359,7 +390,8 @@
                         <div class="information">
                             <div class="img-info">
                                 <div class="circle">
-                                    <i data-feather="mail" style="width: 16px; color: #ff7a57;"></i>
+                                    <i class="icon-orange"  data-feather="mail" style="width: 16px; color: #ff7a57;"></i>
+                                    <i class="icon-white" data-feather="mail" style="width: 16px; color: white;"></i>
                                 </div>
                             </div>
                             <div class="text-info">
@@ -378,12 +410,24 @@
             <div class="content-top">
                 <div class="content-left">
                     <h3>About Me</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>I am a Front End Web Developer and UI / UX Designer who has a lot of experience in the freelancing world.</p>
                     <div class="sosial-media">
-                        <div class="circle"><i data-feather="facebook" width="16px"></i></div>
-                        <div class="circle"><i data-feather="instagram" width="16px"></i></div>
-                        <div class="circle"><i data-feather="twitter" width="16px"></i></div>
-                        <div class="circle"><i data-feather="linkedin" width="16px"></i></div>
+                        <div class="circle" onclick="window.location.href='https://www.facebook.com/alfian.prisma.yopiangga'">
+                            <i class="icon-dark" data-feather="facebook" width="16px" style="color: #313335;"></i>
+                            <i class="icon-white" data-feather="facebook" width="16px" style="color: white;"></i>
+                        </div>
+                        <div class="circle" onclick="window.location.href='https://www.instagram.com/alfian_prisma_yopiangga/'">
+                            <i class="icon-dark" data-feather="instagram" width="16px" style="color: #313335;"></i>
+                            <i class="icon-white" data-feather="instagram" width="16px" style="color: white;"></i>
+                        </div>
+                        <div class="circle" onclick="window.location.href='https://twitter.com/AlfianPrisma'">
+                            <i class="icon-dark" data-feather="twitter" width="16px" style="color: #313335;"></i>
+                            <i class="icon-white" data-feather="twitter" width="16px" style="color: white;"></i>
+                        </div>
+                        <div class="circle" onclick="window.location.href='https://www.linkedin.com/in/alfian-prisma-yopiangga-a954251a8/'">
+                            <i class="icon-dark" data-feather="linkedin" width="16px" style="color: #313335;"></i>
+                            <i class="icon-white" data-feather="linkedin" width="16px" style="color: white;"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="content-center">
@@ -393,7 +437,7 @@
                 </div>
                 <div class="content-right">
                     <h3>Petikdua Store</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, fuga laborum dolorum enim voluptate voluptatibus eum quibusdam placeat illum.</p>
+                    <p>Petikdua is a digital platform that was created to help the current work of society with developing digital technology.</p>
                 </div>
             </div>
             <div class="content-bottom">
@@ -406,6 +450,7 @@
     <script>feather.replace()</script>
     <script src="/js/jquery-3.5.1.js"></script>
     <script src="/js/style-main.js"></script>
+    <script src="/js/aos/aos.js"></script>
     <script>
         AOS.init();
     </script>
