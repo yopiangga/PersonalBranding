@@ -1,7 +1,7 @@
 @media only screen and (min-width: 1024px) {
   @font-face {
     font-family: "Poppins";
-    src: url("/font/poppins/Poppins-Regular.ttf");
+    src: url("../font/poppins/Poppins-Regular.ttf");
   }
   html {
     overflow-y: scroll;
