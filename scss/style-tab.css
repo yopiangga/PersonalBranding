@@ -98,7 +98,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .landing-page nav .content .btn-menu-landscape {
+  .landing-page nav .content .btn-menu-tablet {
     width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -113,10 +113,10 @@
   .landing-page nav .content .menu-mobile {
     display: none;
   }
-  .landing-page nav .content .menu-mobile-landscape {
+  .landing-page nav .content .menu-tablet {
     display: none;
   }
-  .landing-page nav .content .menu-mobile-landscape.active {
+  .landing-page nav .content .menu-tablet.active {
     display: block;
     position: fixed;
     z-index: 999;
@@ -127,14 +127,13 @@
             box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.05);
     padding-bottom: 20px;
     background-color: white;
-    height: 100%;
     overflow: auto;
   }
-  .landing-page nav .content .menu-mobile-landscape.active ul a {
+  .landing-page nav .content .menu-tablet.active ul a {
     list-style: none;
     text-decoration: none;
   }
-  .landing-page nav .content .menu-mobile-landscape.active ul a li {
+  .landing-page nav .content .menu-tablet.active ul a li {
     height: 55px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -148,13 +147,13 @@
     background-color: white;
     color: #3B3B3B;
   }
-  .landing-page nav .content .menu-mobile-landscape.active ul a.active li {
+  .landing-page nav .content .menu-tablet.active ul a.active li {
     background-color: #ff7a57;
     color: white;
     -webkit-transition: 300ms;
     transition: 300ms;
   }
-  .landing-page nav .content .menu-mobile-landscape.active ul a:hover li {
+  .landing-page nav .content .menu-tablet.active ul a:hover li {
     background-color: #ff7a57;
     color: white;
     -webkit-transition: 300ms;
@@ -468,6 +467,12 @@
   }
   .landing-page .about .content .content-body .body-left {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 50px;
   }
   .landing-page .about .content .content-body .body-left .frame {
@@ -577,13 +582,15 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
   }
   .landing-page .service .content .content-body .card {
@@ -606,6 +613,8 @@
             align-items: center;
     cursor: pointer;
     margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   .landing-page .service .content .content-body .card:hover {
     border: 1px solid #ff7a57;
@@ -1420,6 +1429,9 @@
     font-size: 14px;
   }
   .landing-page #desktop {
+    display: none;
+  }
+  .landing-page #mobile-landscape {
     display: none;
   }
 }

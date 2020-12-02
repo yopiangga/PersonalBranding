@@ -440,6 +440,8 @@
 
                     .body-left {
                         width: 100%;
+                        display: flex;
+                        justify-content: center;
                         margin-bottom: 50px;
 
                         .frame {
@@ -1331,6 +1333,9 @@
             display: none;
         }
 
+        #tablet {
+            display: none;
+        }
     }
 
 

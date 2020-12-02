@@ -468,6 +468,12 @@
   }
   .landing-page .about .content .content-body .body-left {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 50px;
   }
   .landing-page .about .content .content-body .body-left .frame {
@@ -1420,6 +1426,9 @@
     font-size: 14px;
   }
   .landing-page #desktop {
+    display: none;
+  }
+  .landing-page #tablet {
     display: none;
   }
 }

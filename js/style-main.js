@@ -276,3 +276,63 @@ $(window).scroll(function () {
         $(".landing-page nav .content .menu-mobile-landscape ul .nav-contact").removeClass("active");
     }
 });
+
+
+
+
+
+
+
+$(document).ready(function () {
+    $('.landing-page nav .content .btn-menu-tablet').click(function () {
+        $('.landing-page nav .content .menu-tablet').toggleClass('active');
+    });
+});
+
+$(document).ready(function () {
+    $('section').click(function () {
+        $('.landing-page nav .content .menu-tablet').removeClass('active');
+    });
+});
+
+
+$(window).scroll(function () {
+
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 0 && scroll < 1000) {
+        $(".landing-page nav .content .menu-tablet ul .nav-home").addClass("active");
+    } else {
+        $(".landing-page nav .content .menu-tablet ul .nav-home").removeClass("active");
+    }
+
+    if (scroll >= 1000 && scroll < 2300) {
+        $(".landing-page nav .content .menu-tablet ul .nav-about").addClass("active");
+    } else {
+        $(".landing-page nav .content .menu-tablet ul .nav-about").removeClass("active");
+    }
+
+    if (scroll >= 2300 && scroll < 3800) {
+        $(".landing-page nav .content .menu-tablet ul .nav-service").addClass("active");
+    } else {
+        $(".landing-page nav .content .menu-tablet ul .nav-service").removeClass("active");
+    }
+
+    if (scroll >= 3800 && scroll < 6700) {
+        $(".landing-page nav .content .menu-tablet ul .nav-portfolio").addClass("active");
+    } else {
+        $(".landing-page nav .content .menu-tablet ul .nav-portfolio").removeClass("active");
+    }
+
+    if (scroll >= 6700 && scroll < 7800) {
+        $(".landing-page nav .content .menu-tablet ul .nav-testimonial").addClass("active");
+    } else {
+        $(".landing-page nav .content .menu-tablet ul .nav-testimonial").removeClass("active");
+    }
+
+    if (scroll >= 7800) {
+        $(".landing-page nav .content .menu-tablet ul .nav-contact").addClass("active");
+    } else {
+        $(".landing-page nav .content .menu-tablet ul .nav-contact").removeClass("active");
+    }
+});

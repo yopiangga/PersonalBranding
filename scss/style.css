@@ -1280,5 +1280,8 @@
   .landing-page #mobile-landscape {
     display: none;
   }
+  .landing-page #tablet {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
