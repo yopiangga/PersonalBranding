@@ -311,15 +311,15 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .landing-page .home .content .content-top .top-right img {
-    width: 100%;
+    width: 80%;
   }
   .landing-page .home .content .content-bottom {
     height: 100px;
@@ -391,6 +391,12 @@
   }
   .landing-page .upto-now .card-mobile {
     width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .landing-page .upto-now .card-mobile h2 {
     font-size: 34px;
@@ -400,6 +406,7 @@
     font-weight: 16px;
   }
   .landing-page .upto-now .card-mobile div {
+    width: 33%;
     height: 120px;
     display: -webkit-box;
     display: -ms-flexbox;

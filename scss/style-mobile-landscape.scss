@@ -299,11 +299,11 @@
                     .top-right {
                         width: 100%;
                         display: flex;
-                        justify-content: flex-end;
+                        justify-content: center;
                         align-items: center;
 
                         img {
-                            width: 100%;
+                            width: 80%;
                         }
                     }
                 }
@@ -379,6 +379,8 @@
 
             .card-mobile {
                 width: 85%;
+                display: flex;
+                justify-content: space-between;
 
                 h2 {
                     font-size: 34px;
@@ -390,6 +392,7 @@
                 }
 
                 div {
+                    width: 33%;
                     height: 120px;
                     display: flex;
                     flex-direction: column;
