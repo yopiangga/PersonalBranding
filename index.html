@@ -7,16 +7,31 @@
 
     <link rel="stylesheet" href="/css/css-reset.css">
     <link rel="stylesheet" href="/scss/style.css">
+    <link rel="stylesheet" href="/scss/style-mobile.css">
     <link rel="stylesheet" href="/js/aos/aos.css">
+    <link rel="stylesheet" href="/css/animate.min.css">
 </head>
 <body class="landing-page">
 
     <nav>
         <div class="content">
-            <div class="logo">
+            <div class="logo" onclick="window.location.href='index.html'">
                 <img src="/img/logo.png" alt="">
             </div>
-            <div class="menu">
+            <div class="menu" id="desktop">
+                <ul>
+                    <a href="#home" class="nav-home"><li>HOME</li></a>
+                    <a href="#about" class="nav-about"><li>ABOUT</li></a>
+                    <a href="#service" class="nav-service"><li>SERVICE</li></a>
+                    <a href="#portfolio" class="nav-portfolio"><li>PORTFOLIO</li></a>
+                    <a href="#testimonial" class="nav-testimonial"><li>TESTIMONIAL</li></a>
+                    <a href="#contact" class="nav-contact"><li>CONTACT</li></a>
+                </ul>
+            </div>
+            <div class="btn-menu" id="mobile">
+                <i data-feather="menu"></i>
+            </div>
+            <div class="menu-mobile" id="mobile">
                 <ul>
                     <a href="#home" class="nav-home"><li>HOME</li></a>
                     <a href="#about" class="nav-about"><li>ABOUT</li></a>
@@ -66,7 +81,7 @@
                 </div>
             </div>
             <div class="content-bottom">
-                <div class="card">
+                <div class="card" id="desktop">
                     <div class="card-left">
                         <h2>15</h2>
                         <h6>Happy Clients</h6>
@@ -82,6 +97,25 @@
                         <h6>Awarding</h6>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="upto-now" id="mobile">
+        <div class="card-mobile">
+            <div class="card-top">
+                <h2>15</h2>
+                <h6>Happy Clients</h6>
+            </div>
+
+            <div class="card-center">
+                <h2>15</h2>
+                <h6>Project Completed</h6>
+            </div>
+
+            <div class="card-bottom">
+                <h2>6</h2>
+                <h6>Awarding</h6>
             </div>
         </div>
     </section>
@@ -117,7 +151,7 @@
                 <h3 data-aos="fade-up">What I Do</h3>
                 <p>What can I give and do to help solve your problem quickly and easily</p>
             </div>
-            <div class="content-body">
+            <div class="content-body" id="desktop">
                 <div class="card" data-aos="fade-right">
                     <i data-feather="pen-tool" style="margin-bottom: 10px;"></i>
                     <h4>UI/UX</h4>
@@ -131,6 +165,25 @@
                     <h4>App Design</h4>
                 </div>
                 <div class="card" data-aos="fade-left">
+                    <i data-feather="trending-up" style="margin-bottom: 10px;"></i>
+                    <h4>SEO</h4>
+                </div>
+            </div>
+
+            <div class="content-body" id="mobile">
+                <div class="card" data-aos="fade-up">
+                    <i data-feather="pen-tool" style="margin-bottom: 10px;"></i>
+                    <h4>UI/UX</h4>
+                </div>
+                <div class="card" data-aos="fade-up">
+                    <i data-feather="monitor" style="margin-bottom: 10px;"></i>
+                    <h4>Web Design</h4>
+                </div>
+                <div class="card" data-aos="fade-up">
+                    <i data-feather="smartphone" style="margin-bottom: 10px;"></i>
+                    <h4>App Design</h4>
+                </div>
+                <div class="card" data-aos="fade-up">
                     <i data-feather="trending-up" style="margin-bottom: 10px;"></i>
                     <h4>SEO</h4>
                 </div>
@@ -195,7 +248,8 @@
             <div class="content-head">
                 <h5>Portfolio</h5>
                 <h3 data-aos="fade-up">My Wonderful Work</h3>
-                <p>Various projects that I have done from various kinds of requests from my clients, both from within and outside the country</p>
+                <p id="desktop">Various projects that I have done from various kinds of requests from my clients, both from within and outside the country</p>
+                <p id="mobile">Various projects that I have done from various kinds of requests from my clients</p>
             </div>
             <div class="content-body">
                 <div class="navigation">
@@ -291,7 +345,7 @@
                     </div>
                     <div class="slide-center">
                         <div class="card-box">
-                            <div class="card testimonial-1 unActive" data-aos="fade-left">
+                            <div class="card testimonial-1 unActive animate__animated animate__fadeInLeft">
                                 <div class="image">
                                     <img src="/img/me-circle-1.png" alt="">
                                 </div>
@@ -299,7 +353,7 @@
                                 <h4>Jhon D. Locke</h4>
                                 <h5>Director Pick Furniture</h5>
                             </div>
-                            <div class="card testimonial-2" data-aos="fade-left">
+                            <div class="card testimonial-2 animate__animated animate__fadeIn">
                                 <div class="image">
                                     <img src="/img/me-circle-1.png" alt="">
                                 </div>
@@ -307,7 +361,7 @@
                                 <h4>Jhon D. Locke</h4>
                                 <h5>Director Pick Furniture</h5>
                             </div>
-                            <div class="card testimonial-3 unActive" data-aos="fade-left">
+                            <div class="card testimonial-3 unActive animate__animated animate__fadeInRight">
                                 <div class="image">
                                     <img src="/img/me-circle-1.png" alt="">
                                 </div>
@@ -348,7 +402,8 @@
             <div class="content-head">
                 <h5>Contact</h5>
                 <h3 data-aos="fade-up">Get in Touch</h3>
-                <p>If you need more information about me and want to discuss your project, you can contact me by emailing me or contacting me using social media.</p>
+                <p id="desktop">If you need more information about me and want to discuss your project, you can contact me by emailing me or contacting me using social media.</p>
+                <p id="mobile">If you need more information about me and want to discuss your project</p>
             </div>
             <div class="content-body">
                 <div class="card">
