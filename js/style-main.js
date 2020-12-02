@@ -221,3 +221,58 @@ $(window).scroll(function () {
         $(".landing-page nav .content .menu-mobile ul .nav-contact").removeClass("active");
     }
 });
+
+
+$(document).ready(function () {
+    $('.landing-page nav .content .btn-menu-landscape').click(function () {
+        $('.landing-page nav .content .menu-mobile-landscape').toggleClass('active');
+    });
+});
+
+$(document).ready(function () {
+    $('section').click(function () {
+        $('.landing-page nav .content .menu-mobile-landscape').removeClass('active');
+    });
+});
+
+
+$(window).scroll(function () {
+
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 0 && scroll < 1000) {
+        $(".landing-page nav .content .menu-mobile-landscape ul .nav-home").addClass("active");
+    } else {
+        $(".landing-page nav .content .menu-mobile-landscape ul .nav-home").removeClass("active");
+    }
+
+    if (scroll >= 1000 && scroll < 2300) {
+        $(".landing-page nav .content .menu-mobile-landscape ul .nav-about").addClass("active");
+    } else {
+        $(".landing-page nav .content .menu-mobile-landscape ul .nav-about").removeClass("active");
+    }
+
+    if (scroll >= 2300 && scroll < 4500) {
+        $(".landing-page nav .content .menu-mobile-landscape ul .nav-service").addClass("active");
+    } else {
+        $(".landing-page nav .content .menu-mobile-landscape ul .nav-service").removeClass("active");
+    }
+
+    if (scroll >= 4572 && scroll < 7400) {
+        $(".landing-page nav .content .menu-mobile-landscape ul .nav-portfolio").addClass("active");
+    } else {
+        $(".landing-page nav .content .menu-mobile-landscape ul .nav-portfolio").removeClass("active");
+    }
+
+    if (scroll >= 7400 && scroll < 8500) {
+        $(".landing-page nav .content .menu-mobile-landscape ul .nav-testimonial").addClass("active");
+    } else {
+        $(".landing-page nav .content .menu-mobile-landscape ul .nav-testimonial").removeClass("active");
+    }
+
+    if (scroll >= 8500) {
+        $(".landing-page nav .content .menu-mobile-landscape ul .nav-contact").addClass("active");
+    } else {
+        $(".landing-page nav .content .menu-mobile-landscape ul .nav-contact").removeClass("active");
+    }
+});

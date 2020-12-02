@@ -1,4 +1,5 @@
-@media only screen and (min-width: 1024px) {
+
+@media only screen and (min-width: 768px) and ( max-width: 1023px) {
 
 
     @font-face {
@@ -26,7 +27,7 @@
         font-family: 'Poppins';
 
         nav {
-            height: 120px;
+            height: 80px;
             width: 100%;
             background-color: white;
             box-shadow: 0px 0px 32px rgba($color: #000000, $alpha: 0.05);
@@ -41,13 +42,13 @@
                 display: flex;
 
                 .logo {
-                    width: 20%;
+                    width: 50%;
                     height: 100%;
                     display: flex;
                     align-items: center;
 
                     img {
-                        width: 160px;
+                        width: 120px;
                     }
                 }
 
@@ -87,14 +88,85 @@
                         }
                     }
                 }
+
+                .btn-menu {
+                    width: 50%;
+                    display: none;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+
+                .btn-menu-landscape {
+                    width: 50%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+
+                .menu-mobile {
+                    display: none;
+                }
+
+                .menu-mobile-landscape {
+                    display: none;
+                }
+
+                .menu-mobile-landscape.active {
+                    display: block;
+                    position: fixed;
+                    z-index: 999;
+                    top: 80px;
+                    left: 0;
+                    width: 100%;
+                    box-shadow: 0px 0px 32px rgba($color: #000000, $alpha: 0.05);
+                    padding-bottom: 20px;
+                    background-color: white;
+                    height: 100%;
+                    overflow: auto;
+
+                    ul {
+
+                        a {
+                            list-style: none;
+                            text-decoration: none;
+
+                            li {
+                                height: 55px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: white;
+                                color: $color-dark;
+                                // padding-left: 10%;
+                            }
+                        }
+
+                        a.active {
+
+                            li {
+                                background-color: $color-primary;
+                                color: white;
+                                transition: 300ms;
+                            }
+                        }
+
+                        a:hover {
+
+                            li {
+                                background-color: $color-primary;
+                                color: white;
+                                transition: 300ms;
+                            }
+                        }
+                    }
+                }
             }
 
         }
 
         .home {
             width: 100%;
-            padding-top: 120px;
-            height: 768px;
+            padding-top: 150px;
             background-color: $color-primary-2;
             display: flex;
             justify-content: center;
@@ -105,12 +177,14 @@
 
                 .content-top {
                     display: flex;
-                    height: 100%;
+                    flex-direction: column;
+                    // height: 100%;
 
                     .top-left {
-                        width: 45%;
+                        width: 100%;
                         display: flex;
                         align-items: center;
+                        margin-bottom: 30px;
 
                         .inner {
                             width: 100%;
@@ -121,9 +195,9 @@
                             }
 
                             h1 {
-                                font-size: 60px;
+                                font-size: 45px;
                                 font-weight: bolder;
-                                width: 130%;
+                                width: 100%;
                                 margin-bottom: 10px;
                             }
 
@@ -135,16 +209,22 @@
 
                             .action {
                                 margin-bottom: 70px;
+                                display: flex;
+                                // flex-direction: column;
+                                align-items: center;
 
                                 button {
-                                    padding: 15px 35px 15px 35px;
+                                    padding: 15px 20px 15px 20px;
                                     border-radius: 40px;
                                     border: none;
                                     margin-right: 3%;
+                                    width: 100%;
+                                    font-weight: bold;
                                 }
 
                                 .hire-me {
                                     color: white;
+                                    // margin-bottom: 20px;
                                     cursor: pointer;
                                     border: 1px solid transparent;
                                     background-color: $color-primary;
@@ -178,6 +258,8 @@
 
                             .sosial-media {
                                 display: flex;
+                                width: 100%;
+                                justify-content: space-around;
 
                                 .circle {
                                     width: 35px;
@@ -187,7 +269,6 @@
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-                                    margin-right: 15px;
                                     cursor: pointer;
 
                                     .icon-dark {
@@ -217,14 +298,13 @@
                     }
 
                     .top-right {
-                        width: 55%;
+                        width: 100%;
                         display: flex;
                         justify-content: flex-end;
                         align-items: center;
 
                         img {
-                            width: 550px;
-                            height: 400px;
+                            width: 100%;
                         }
                     }
                 }
@@ -287,14 +367,43 @@
                             color: $color-primary;
                         }
                     }
+
+                }
+            }
+        }
+
+        .upto-now {
+            background-color: $color-gray;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .card-mobile {
+                width: 85%;
+
+                h2 {
+                    font-size: 34px;
+                    font-weight: bold;
+                }
+
+                h6 {
+                    font-weight: 16px;
+                }
+
+                div {
+                    height: 120px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
                 }
             }
         }
 
         .about {
-            padding-top: 150px;
+            padding-top: 110px;
+            padding-bottom: 110px;
             width: 100%;
-            height: 768px;
             display: flex;
             justify-content: center;
 
@@ -322,15 +431,17 @@
 
                     p {
                         line-height: 28px;
-                        width: 700px;
+                        width: 100%;
                     }
                 }
 
                 .content-body {
                     display: flex;
+                    flex-direction: column;
 
                     .body-left {
-                        width: 40%;
+                        width: 100%;
+                        margin-bottom: 50px;
 
                         .frame {
                             border: 10px solid $color-primary;
@@ -359,7 +470,7 @@
                     }
 
                     .body-right {
-                        width: 60%;
+                        width: 100%;
 
                         h3 {
                             font-size: 28px;
@@ -401,8 +512,8 @@
         }
 
         .service {
-            padding-top: 120px;
-            height: 650px;
+            padding-top: 110px;
+            padding-bottom: 110px;
             width: 100%;
             background-color: $color-primary-2;
             display: flex;
@@ -432,13 +543,14 @@
 
                     p {
                         line-height: 28px;
-                        width: 700px;
+                        width: 100%;
                     }
                 }
 
                 .content-body {
                     display: flex;
-                    justify-content: space-around;
+                    flex-direction: column;
+                    align-items: center;
                     width: 100%;
 
                     .card {
@@ -451,6 +563,7 @@
                         justify-content: center;
                         align-items: center;
                         cursor: pointer;
+                        margin-bottom: 20px;
                     }
 
                     .card:hover {
@@ -466,9 +579,9 @@
 
         .skill {
             width: 100%;
-            height: 500px;
             display: flex;
-            padding-top: 120px;
+            padding-top: 110px;
+            padding-bottom: 110px;
             justify-content: center;
             background-color: $color-gray;
 
@@ -496,7 +609,7 @@
 
                     p {
                         line-height: 28px;
-                        width: 700px;
+                        width: 100%;
                     }
                 }
 
@@ -505,11 +618,11 @@
 
                     .task {
                         display: flex;
-                        justify-content: space-between;
-                        margin-bottom: 50px;
+                        flex-direction: column;
 
                         .taskbar {
-                            width: 45%;
+                            width: 100%;
+                            margin-bottom: 30px;
 
                             .bar {
                                 width: 100%;
@@ -538,10 +651,9 @@
 
         .portfolio {
             width: 100%;
-            height: auto;
             display: flex;
-            padding-top: 120px;
-            padding-bottom: 120px;
+            padding-top: 110px;
+            padding-bottom: 110px;
             justify-content: center;
             background-color: white;
 
@@ -569,7 +681,7 @@
 
                     p {
                         line-height: 28px;
-                        width: 700px;
+                        width: 100%;
                     }
                 }
 
@@ -584,20 +696,28 @@
 
                         ul {
                             display: flex;
-                            justify-content: space-around;
-                            width: 40%;
+                            justify-content: center;
+                            width: 100%;
+                            overflow: auto;
 
                             li {
                                 list-style-type: none;
-                                color: $color-dark;
+                                color: rgba($color: $color-dark, $alpha: 1);
+                                padding: 7px 14px 7px 14px;
+                                border: 1px solid rgba($color: $color-dark, $alpha: 1);
+                                border-radius: 20px;
+                                margin-right: 10px;
                             }
 
                             li.active {
-                                color: $color-primary;
+                                color: white;
+                                background-color: $color-primary;
+                                border: 1px solid $color-primary;
+                                transition: 300ms;
                             }
 
                             li:hover {
-                                color: $color-primary;
+                                color: white;
                                 cursor: pointer;
                             }
                         }
@@ -613,16 +733,16 @@
                             margin-left: 10px;
                             margin-right: 10px;
                             margin-bottom: 20px;
-                            width: 350px;
-                            height: 240px;
+                            width: 100%;
+                            // height: 240px;
 
                             .desain-img {
-                                height: 240px;
+                                // height: 240px;
                                 display: flex;
                                 justify-content: center;
 
                                 img {
-                                    width: 350px;
+                                    width: 100%;
                                 }
 
                                 .menu {
@@ -692,9 +812,9 @@
         }
 
         .testimonial {
-            padding-top: 120px;
+            padding-top: 110px;
+            padding-bottom: 110px;
             width: 100%;
-            height: 700px;
             display: flex;
             justify-content: center;
             background-color: $color-gray;
@@ -723,7 +843,7 @@
 
                     p {
                         line-height: 28px;
-                        width: 700px;
+                        width: 100%;
                     }
                 }
 
@@ -732,6 +852,7 @@
 
                     .slide {
                         display: flex;
+                        align-items: center;
                         width: 100%;
                         height: 80%;
 
@@ -739,13 +860,13 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            width: 15%;
+                            width: 10%;
                             height: 100%;
                             cursor: pointer;
                         }
 
                         .slide-center {
-                            width: 70%;
+                            width: 80%;
 
                             .card-box {
                                 width: 100%;
@@ -755,15 +876,15 @@
                                 justify-content: center;
 
                                 .card {
-                                    width: 800px;
-                                    height: 340px;
+                                    width: 100%;
                                     background-color: white;
                                     border-radius: 10px;
                                     box-sizing: border-box;
                                     padding: 30px;
+                                    margin-bottom: 30px;
                                     flex-direction: column;
-                                    align-items: center;
-                                    text-align: center;
+                                    // align-items: center;
+                                    text-align: left;
 
                                     .image {
                                         width: 80px;
@@ -771,6 +892,8 @@
                                         border-radius: 40px;
                                         box-shadow: 0px 10px 10px 0px rgba($color: $color-dark-shadow, $alpha: 0.5);
                                         margin-bottom: 30px;
+                                        margin-left: auto;
+                                        margin-right: auto;
 
                                         img {
                                             width: 80px;
@@ -817,7 +940,7 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            width: 15%;
+                            width: 10%;
                             height: 100%;
                             cursor: pointer;
                         }
@@ -851,7 +974,6 @@
 
         .hire-banner {
             padding-top: 60px;
-            height: 150px;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -861,7 +983,7 @@
                 width: 85%;
                 height: 100%;
                 display: flex;
-                align-items: center;
+                flex-direction: column;
                 background-color: $color-primary;
                 color: white;
                 padding: 30px;
@@ -869,7 +991,8 @@
                 border-radius: 20px;
 
                 .content-left {
-                    width: 70%;
+                    width: 100%;
+                    margin-bottom: 30px;
 
                     h3 {
                         font-size: 24px;
@@ -883,12 +1006,11 @@
                 }
 
                 .content-right {
-                    width: 30%;
+                    width: 100%;
 
                     button {
                         padding: 15px 35px 15px 35px;
                         border-radius: 40px;
-                        float: right;
                         border: 1px solid transparent;
                         background-color: white;
                         color: $color-dark;
@@ -908,9 +1030,8 @@
         }
 
         .contact {
-            padding-top: 120px;
-            padding-bottom: 60px;
-            height: 768px;
+            padding-top: 110px;
+            padding-bottom: 110px;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -940,7 +1061,7 @@
 
                     p {
                         line-height: 28px;
-                        width: 700px;
+                        width: 100%;
                     }
                 }
 
@@ -952,11 +1073,12 @@
                         background-color: white;
                         padding: 30px;
                         display: flex;
+                        flex-direction: column;
                         justify-content: center;
                         box-sizing: border-box;
 
                         .card-left {
-                            width: 55%;
+                            width: 100%;
 
                             h3 {
                                 font-weight: bold;
@@ -967,7 +1089,6 @@
                             form {
                                 display: flex;
                                 flex-direction: column;
-                                padding-right: 30px;
 
                                 input {
                                     font-family: 'Poppins';
@@ -1013,15 +1134,15 @@
                         }
 
                         .line {
+                            display: none;
                             width: 1px;
                             height: 350px;
                             background-color: rgba($color: $color-dark, $alpha: 0.1)
                         }
 
                         .card-right {
-                            width: 35%;
+                            width: 100%;
                             padding-top: 70px;
-                            padding-left: 40px;
 
                             .information {
                                 margin-bottom: 40px;
@@ -1088,8 +1209,7 @@
         }
 
         .footer {
-            padding-top: 60px;
-            height: 400px;
+            padding-top: 110px;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -1105,9 +1225,11 @@
                     width: 100%;
                     height: 80%;
                     display: flex;
+                    flex-direction: column;
 
                     .content-left {
-                        width: 33%;
+                        width: 100%;
+                        margin-bottom: 50px;
 
                         h3 {
                             font-size: 18px;
@@ -1159,10 +1281,8 @@
                     }
 
                     .content-center {
-                        width: 33%;
-                        padding-right: 20px;
-                        padding-left: 20px;
-                        box-sizing: border-box;
+                        margin-bottom: 50px;
+                        width: 100%;
 
                         h3 {
                             font-size: 18px;
@@ -1177,7 +1297,8 @@
                     }
 
                     .content-right {
-                        width: 33%;
+                        margin-bottom: 50px;
+                        width: 100%;
 
                         h3 {
                             font-size: 18px;
@@ -1192,7 +1313,7 @@
                 }
 
                 .content-bottom {
-                    height: 20%;
+                    height: 80px;
                     width: 100%;
                     border-top: 1px solid white;
                     display: flex;
@@ -1206,14 +1327,10 @@
             }
         }
 
-        #mobile {
+
+        #desktop {
             display: none;
         }
-
-        #mobile-landscape {
-            display: none;
-        }
-
 
     }
 

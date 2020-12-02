@@ -1277,5 +1277,8 @@
   .landing-page #mobile {
     display: none;
   }
+  .landing-page #mobile-landscape {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 567px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   @font-face {
     font-family: "Poppins";
     src: url("/font/poppins/Poppins-Regular.ttf");
@@ -90,6 +90,16 @@
   }
   .landing-page nav .content .btn-menu {
     width: 50%;
+    display: none;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .landing-page nav .content .btn-menu-landscape {
+    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -103,7 +113,10 @@
   .landing-page nav .content .menu-mobile {
     display: none;
   }
-  .landing-page nav .content .menu-mobile.active {
+  .landing-page nav .content .menu-mobile-landscape {
+    display: none;
+  }
+  .landing-page nav .content .menu-mobile-landscape.active {
     display: block;
     position: fixed;
     z-index: 999;
@@ -114,12 +127,14 @@
             box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.05);
     padding-bottom: 20px;
     background-color: white;
+    height: 100%;
+    overflow: auto;
   }
-  .landing-page nav .content .menu-mobile.active ul a {
+  .landing-page nav .content .menu-mobile-landscape.active ul a {
     list-style: none;
     text-decoration: none;
   }
-  .landing-page nav .content .menu-mobile.active ul a li {
+  .landing-page nav .content .menu-mobile-landscape.active ul a li {
     height: 55px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -133,13 +148,13 @@
     background-color: white;
     color: #3B3B3B;
   }
-  .landing-page nav .content .menu-mobile.active ul a.active li {
+  .landing-page nav .content .menu-mobile-landscape.active ul a.active li {
     background-color: #ff7a57;
     color: white;
     -webkit-transition: 300ms;
     transition: 300ms;
   }
-  .landing-page nav .content .menu-mobile.active ul a:hover li {
+  .landing-page nav .content .menu-mobile-landscape.active ul a:hover li {
     background-color: #ff7a57;
     color: white;
     -webkit-transition: 300ms;
@@ -742,6 +757,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     overflow: auto;
   }
@@ -911,7 +929,9 @@
     height: 80%;
   }
   .landing-page .testimonial .content .content-body .slide .slide-left {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -923,7 +943,7 @@
     cursor: pointer;
   }
   .landing-page .testimonial .content .content-body .slide .slide-center {
-    width: 100%;
+    width: 80%;
   }
   .landing-page .testimonial .content .content-body .slide .slide-center .card-box {
     width: 100%;
@@ -994,7 +1014,9 @@
     display: none;
   }
   .landing-page .testimonial .content .content-body .slide .slide-right {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1400,8 +1422,5 @@
   .landing-page #desktop {
     display: none;
   }
-  .landing-page #mobile-landscape {
-    display: none;
-  }
 }
-/*# sourceMappingURL=style-mobile.css.map */
+/*# sourceMappingURL=style-tab.css.map */
